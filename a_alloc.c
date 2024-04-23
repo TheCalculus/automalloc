@@ -15,6 +15,11 @@ void a_calloc(void** ptr, size_t nmemb, size_t size) {
     ptrs[position++] = *ptr;
 }
 
+void a_realloc(void** ptr, size_t size) {
+    ptrs[position++] = realloc(*ptr, size);
+    *ptr = NULL;
+}
+
 void a_manrec(void** ptr) {
     // manually add an already allocated pointer to be free'd at the end (eg. strdup)
     ptrs[position++] = *ptr;
