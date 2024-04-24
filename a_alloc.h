@@ -8,6 +8,7 @@ extern size_t position;
 
 void a_malloc(void** ptr, size_t size);
 void a_calloc(void** ptr, size_t nmemb, size_t size);
+void a_realloc(void** ptr, size_t size);
 void a_manrec(void** ptr);
 void a_freeall();
 
